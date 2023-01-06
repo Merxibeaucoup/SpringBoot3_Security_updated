@@ -13,8 +13,10 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Builder;
 
 @Entity
+@Builder
 public class AppUser implements UserDetails {
 
 	@Id
